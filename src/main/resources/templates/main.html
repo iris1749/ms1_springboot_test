@@ -22,7 +22,6 @@
                 <input type="submit" value="추가">
             </form>
         </div>
-
         <div class="bg-red-300 w-[20%] h-[800px] text-center">
             <ul class="h-[100%] overflow-scroll">
                 <li th:each="note : ${noteList}" th:class="${note.id == targetNote.id} ? 'bg-blue-600' : ''">
